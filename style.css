@@ -1,5 +1,5 @@
 body {
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -12,20 +12,23 @@ body {
     padding: 15px;
     background: #f9f9f9;
 }
+/*============= button =============*/
 button {
-/*============= button =============*/    
     background: #007acc;
     color: white;
     padding: 8px 15px;
     border: none;
+    cursor: pointer;
     margin: 5px 0;
 }
 /*============= input ==============*/ 
+
 input,select {
     padding: 5px;
     margin: 3px;
 }
 /*============= result =============*/
+
 .result {
     background: #e8f4fd;
     padding: 10px;
