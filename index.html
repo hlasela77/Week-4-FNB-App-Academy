@@ -34,20 +34,32 @@
        <h2> Lesson 2: Variables </h2>
 
        <h2 id="heading2">Text will change</h2>
-       <p id="teat2">More text here </p>
+       <p id="text2">More text here </p>
        <button onclick="lesson2()">Use Variables</button>
        <script>
-            ver message1 ="Hello everyone!";
-            ver message2 ="Ilove javaScript!";
-            ver message3 ="It's awesome!";
+            var message1 ="Hello everyone!";
+            var message2 ="Ilove javaScript!";
+            var message3 ="It's awesome!";
 
             document.getElementById("heading2").innerHTML = message1;
-            document.getElementById("teat2").innerHTML = message2+ message3;
+            document.getElementById("text2").innerHTML = message2+ message3;
             
         
        </script>
 
-
     </div>
+
+
+    <div class="lesson">
+        <h3>Lesson 3: Variables (Numbers)</h3>
+
+        <p>Math equqtion will show up here</p>
+        <button onclick="lesson()">Do Math</button>
+
+        <script>
+            var num1 = 7;
+            var num2 = 10;
+            document.getElementById("math").innerHTML = num1+"-" + num2 + "=" + (num1 + num2);
+        </script>
 </body>
 </html>
