@@ -59,7 +59,51 @@
         <script>
             var num1 = 7;
             var num2 = 10;
-            document.getElementById("math").innerHTML = num1+"-" + num2 + "=" + (num1 + num2);
+            document.getElementById("math").innerHTML = num1+"X" + num2 + "=" + (num1 + num2);
         </script>
+        </div>
+        <div class="lesson">
+            <h3>Lesson 4: If/Else Drcisons (Conditionals)</h3>
+            <input type="password" id="password" platceholder="Try: 007">
+            <button onclick="lesson4()">Check Password</button>
+            <div class="result" id="result4">Enter password and click</div>
+            <script>
+                function lesson4(){
+                var userPassword = document.getElementById("password").value;
+                if (userPassword == "007") {
+                    document.getElementById("result4").innerHTML ="Correct password. You are logged in!";
+                } else {
+                    document.getElementById("result4").innerHTML ="Wrong password! Please try again";
+                }
+            }
+            </script>
+
+
+        </div>
+        <div class="lesson">
+            <h3>Lesson 5: Click events</h3>
+
+            <h2 onclick="this.innerHTML='is awesome!' ">JavaScript</h2>
+            <p>Click on the word "JavaScript" about.</p>
+        </div>
+
+        <div class="lesson">
+            <h3>Lesson 6: Toggle Functions</h3>
+
+            <h2 id="toggle" onclik="toggleText()">JavaScript</h2>
+            <p>Click repeatedly to toggle!</p>
+
+            <script>
+                function toggleText(){
+                var toggle= document.getElementById("toggle");
+
+                if(toggle.innerHTML == "JavaScript"){
+                    toggle.innerHTML = "is awesome";
+                }else{
+                    toggle.innerHTML = "JavaScript";
+                }
+          
+            </script>
+        </div>
 </body>
 </html>
