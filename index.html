@@ -141,6 +141,28 @@
                 }
             </script>
         </div>
+
+        <div class="lesson">
+            <h2>Lesson 9: Variables Scopes</h2>
+            <p><strong>Concept</strong>: Understanding where variables can be used.</p>
+
+            <button onclick="demonstrateScope()">Demonstrate Local Scope</button>
+            <button onclick="demonstrateScope()">Demonstrate Variable Scope</button>
+            <div class="output" id="scopeOutput">Clik button to see variable scope in action</div>
+
+            <script>
+                var globalVar = "I am a global variable";
+                function demonstrateScope() {
+                    var localVar = "I am a local variable";
+                    document.getElementById("scopeOutput").innerHTML = globalVariable + "<br>" + local: "localVariable +"</br>" + "local variables only exist inside their find"
+                    
+            
+                }
+
+                function documentrateLocalScope() {
+                    document.getElementById("scopeOutput").innerHTML = "Localvariable: " + localVar;
+                }
+            </script>
             
                 
             
