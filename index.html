@@ -240,9 +240,54 @@
                                 }
                                 
                             }
-                            
+
                     </script>
             </div>
+
+
+            <div class="lesson">
+                <h2>Lesson 12: The Switch statement</h2>
+                <p><strong>Concept</strong>: Using switch statements for multiple conditions</p>
+
+                <label for="weather12">Select weather.</label>
+                <select id="weather12">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                    <option value="cloudy">Cloudy</option>
+                </select>
+                <button onclick="checkWeather()">Check Weather</button>
+                <div class="output" id="weatherOutput12">Weather will show here</div>
+                <script>
+                    function checkWeather() {
+                        var weather = document.getElementById("weather12").value;
+                        var output = document.getElementById("weatherOutput12");
+                        let advice;
+
+                        switch (weatherSelected) {
+                            case "sunny":
+                                advice = "It's a bright and sunny day!";
+                                break;
+                            case "rainy":
+                                advice = "Don't forget your umbrella!";
+                                break;
+                            case "snowy":
+                                advice = "Time for some snow fun!";
+                                break;
+                            case "cloudy":
+                                advice= "It might rain later.";
+                                break;
+                            default:
+                                advice = "Weather not recognized.";
+                        }
+                        document.getElemenById("advice12").innerHTML = advice;
+
+                    }
+    </script>
+    
+    </div>
+
+
             
                 
             
