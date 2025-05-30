@@ -102,9 +102,11 @@
                 }else{
                     toggle.innerHTML = "JavaScript";
                 }
+            }
           
             </script>
         </div>
+
 
         <div class="lesson">
             <h2>Lesson 7:Function parameters</h2>
@@ -142,6 +144,8 @@
             </script>
         </div>
 
+
+
         <div class="lesson">
             <h2>Lesson 9: Variables Scopes</h2>
             <p><strong>Concept</strong>: Understanding where variables can be used.</p>
@@ -164,7 +168,9 @@
                 }
             </script>
         </div>
-        ,<div class="lesson">
+
+
+        <div class="lesson">
             <h2>Lesson 10: Min Project-Login From Par1</h2>
             <p><strong>Concept</strong>: Getting user input from form elements</p
                 
@@ -192,7 +198,50 @@
                             }
                         }
                     </script>
-                    
+
+            </div>
+
+
+
+            <div class="lesson">
+                <h2>Lesson 11: Min Project-Login Form Part 2</h2>
+                <p><script>Concept:</script>Complete login verification with functions and Conditionals</p>
+                <p><em>Try username: AppAcademy, password: 12@cademy</em></p>
+
+                <form>
+                    <label for="usernameINPUT11">Username:</label>
+                    <input type="text" id="usernameINPUT11"/><br></br>
+
+                    <label for="passwordINPUT11">Password:</label>
+                    <input type="password" id="passwordINPUT11"/><br></br>
+
+                    <button type="button" onclick="verifyUser11()">Login</button>
+                    </form>
+
+                    <div class="output" id="message11">Enter username and password, then click button</div>
+                    <script>
+                        function verifyUser11() {
+                            var username = document.getElementById("usernameINPUT11").value;
+                            var password = document.getElementById("passwordINPUT11").value;
+                        }
+
+                            if (username === "AppAcademy" && password === "12@cademy") {
+                                document.getElementById("message11").innerHTML = "Login successful!";
+                            } else {
+                                document.getElementById("message11").innerHTML = "Invalid username or password.";
+                            }
+                        function checkuserCreds(username, password) {
+                            var adminUsername = "AppAcademy";  
+                            var adminPassword = "12@cademy"; 
+                            if (username === adminUsername && password === adminPassword) {
+                                document.getElementById("message11").innerHTML = "Correct.Login successful!";
+                             } else{
+                                    document.getElementById("message11").innerHTML = "Invalid username or password."
+                                }
+                                
+                            }
+                            
+                    </script>
             </div>
             
                 
