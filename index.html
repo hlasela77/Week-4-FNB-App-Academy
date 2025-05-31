@@ -284,8 +284,31 @@
 
                     }
     </script>
-    
     </div>
+
+
+    <div class="lesson">
+        <h2>Lesson 13:Numbers and Strings Part1.<h2>
+            <p><strong>Concept</strong>understanding how JavaScript handles text vs numbers</p>
+
+            <button onclick="demonstrateStringNumber()">Show String vs Number</button>
+            <div class="output"  id="stringNumberoutput">Click to see the diffrence between string and number</div>
+<script>
+    function demonstrateStringNumber(){
+        var numberA= 5;
+        var numberB= 3;
+        var stringA= "5";
+        var stringB= "3";
+
+        document.getElementById("stringNumberOutput").innerHTML=
+        "Number addition:" +(numberA + numberB) +"<br>"+
+        "String concatenation: "+ (StringA + StringB) + "<br>" +
+        "mixed: " + (numberA + numberB);
+
+    }
+</script>
+    </div>
+    
 
 
             
