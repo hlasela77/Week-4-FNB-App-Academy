@@ -31,7 +31,7 @@
     </div>
 
     <div class="lesson">
-       <h2> Lesson 2: Variables </h2>
+       <h2> Lesson 2: Variables (Text Storage)</h2>
 
        <h2 id="heading2">Text will change</h2>
        <p id="text2">More text here </p>
@@ -310,7 +310,7 @@
     </div>
      
     <div class="lesson">
-        <h2>Lesson 14:Convertion Text to Numbers</h2>
+        <h2>Lesson 14:Numbers and Strings Part 2 Convertion Text to Numbers</h2>
         <p><strong>Concept</strong>: Converting strings to numbers for calculations</p>
         <input type="text" id="textNumber1" placeholder="Enter first number" value="10">
         <input type="text" id="textNumber2" placeholder="Enter second number" value="5">
@@ -337,6 +337,37 @@
         </script>
 
     </div>
+
+    <div class="lesson">
+        <h2>Lesson 15: Numbers and Strings Part 3-Avoiding Converion Erro's</h2>
+        <p><strong>Concept</strong>: Handling conversion errors and invalid input</p>
+
+        <input type="text" id="safeInput1" placeholder="Enter first number">
+        <input type="text" id="safeInput2" placeholder="Enter second number">
+        <button onclick="safeConvertAndAdd()">Safe Convert and Add</button>
+
+        <div class="output" id="safeOutput">Try entering both number and non-number for error handling</div>
+        <script>
+            function safeConvertAndAdd() {
+                var input1 = document.getElementById("safeInput1").value;
+                var input2 = document.getElementById("safeInput2").value;
+
+                var number1 = parseInt(input1);
+                var number2 = parseInt(input2);
+
+                if (isNaN(number1) || isNaN(number2)) {
+                    document.getElementById("safeOutput").innerHTML = "Error: Please enter valid numbers only!<br>" +
+                    "Input 1: " + input1 + " ' " + (isNaN(num1)? "Invalid" : "Valid") + "<br>" +
+                    "Input 2: " + input2 + " ' " + (isNaN(num2)? "Invalid" : "Valid");
+                } else {
+                    var result = number1 + number2;
+                    document.getElementById("safeOutput").innerHTML = "Result: " + result;
+                
+                }
+            }
+        </script>
+            
+        </script> 
 
 
             
