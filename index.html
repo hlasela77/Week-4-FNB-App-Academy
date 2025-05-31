@@ -308,7 +308,35 @@
     }
 </script>
     </div>
-    
+     
+    <div class="lesson">
+        <h2>Lesson 14:Convertion Text to Numbers</h2>
+        <p><strong>Concept</strong>: Converting strings to numbers for calculations</p>
+        <input type="text" id="textNumber1" placeholder="Enter first number" value="10">
+        <input type="text" id="textNumber2" placeholder="Enter second number" value="5">
+        
+        <button onclick="converAnAdd()">Convert and Add</button>
+        <div class="output" id="conversionOutput">Enter
+            numbers and click to see conversion in action</div>
+        
+
+        <script>
+            function convertAndAdd() {
+                var textNumber1 = document.getElementById("textNumber1").value;
+                var textNumber2 = document.getElementById("textNumber2").value;
+
+                var stringResult = input1 + input2
+
+                var numberResult = parseInt(input1) + parseInt(input2);
+
+                document.getElementById("conversionOutput").innerHTML =
+                "Without conversion: " + stringResult + "<br>" +
+                "With conversion: " + numberResult;
+            }
+
+        </script>
+
+    </div>
 
 
             
